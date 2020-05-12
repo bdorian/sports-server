@@ -1,6 +1,6 @@
 {
   "name": "fsm-server",
-  "description": "Fantasy Sports Melee Back End Application",
+  "description": "Sports Back End Application",
   "version": "0.0.0",
   "homepage": "",
   "main": "src",
@@ -32,10 +32,10 @@
     "jsonwebtoken": "^8.2.1",
     "moment": "^2.22.1",
     "pg": "^7.6.0",
-    "postmark": "^1.6.1",
+    "postmark": "^2.5.3",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
-    "sequelize": "^4.37.8",
+    "sequelize": "^5.21.8",
     "sliced": "^1.0.1",
     "winston": "^2.4.0"
   },
