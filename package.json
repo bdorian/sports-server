@@ -1,0 +1,43 @@
+{
+  "name": "fsm-server",
+  "description": "Fantasy Sports Melee Back End Application",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "melee"
+  ],
+  "author": {
+    "name": "DB",
+    "email": "dbdbdbdb10@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": "8.4.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "config": "^1.30.0",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "moment": "^2.22.1",
+    "pg": "^7.6.0",
+    "postmark": "^1.6.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "sequelize": "^4.37.8",
+    "sliced": "^1.0.1",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {}
+}

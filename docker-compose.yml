@@ -1,0 +1,34 @@
+version: "3"
+services:
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: fsm
+      POSTGRES_PASSWORD: fsm
+      POSTGRES_DB: fsm_server
+      PGDATA: /usr/local/var/postgres
+    volumes:
+      - pgdata:/usr/local/var/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - fsmnet
+
+  fsm-server:
+    container_name: fsm-server
+    #restart: always
+    build: .
+    ports:
+      - "3030:3030"
+    environment:
+      DATABASE_URL: postgres://admin:admin@db:5432/fsm_server
+    networks:
+      - fsmnet
+    depends_on:
+      - db
+
+volumes:
+  pgdata: 
+networks:
+  fsmnet:

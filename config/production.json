@@ -1,0 +1,5 @@
+{
+  "host": "fsm-server-app.feathersjs.com",
+  "postgres":"HEROKU_POSTGRESQL_GREEN_URL",
+  "port": "PORT"
+}

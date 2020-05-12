@@ -1,0 +1,61 @@
+{
+  "leagues": ["NBA"],
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "postgres": "postgres://fsmadmin:fsm2018!@fsm.clrvfwcyiqjw.us-east-1.rds.amazonaws.com:5432/postgres",
+  "authentication": {
+    "secret": "28bb2fe4d43fde250259864af8f28fb17796048e8e7f20545d1d7baff1727a0577287b5f38758d563c0c78741519e8d67da321e124f0995b9f5e0c6a9553ed3b986e4661eaa72fef9b3fd10ba807f682cf5d240c7a659c3e8f00b835507ee3d0f3ad5f87e84a421d757009f4672a8c3fa39721665818a9275763cb10c0871cb36bab2d956168557379766bbc351c9d9ba4e88ca28a86aca3df903121fc6ad1d7f31eef3f3e67b94b318fde6880ae9d5743590973514482ab6a15bf8a9c3a4f1348af8960fff249e4b19cb32eb1569209e016556f8bdf4e4c184642adb0f3cc78a1a383eb5b2d067367fb4c8b763c6fc306c89dc8975265443c5a18d6bc11708a",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "user",
+    "jwt": {
+      "header": {
+        "type": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    },
+    "auth0": {
+      "clientID": "your auth0 client id",
+      "clientSecret": "your auth0 client secret",
+      "successRedirect": "/",
+      "domain": "mydomain.auth0.com"
+    },
+    "cookie": {
+      "enabled": true,
+      "name": "feathers-jwt",
+      "httpOnly": false,
+      "secure": false
+    }
+  },
+  "postmarkTemplateIds": {
+    "welcomeTempPassword": 8264296,
+    "signupExisting": 3751226,
+    "securityAlertLoginAttempts": 3751225,
+    "forgotPasswordMissingUser": 8264444,
+    "forgotPasswordExistingUser": 8264444,
+    "changeEmail": 3751682
+  },
+  "feed": {
+    "authenticate": {
+      "userId": "FSMadmin",
+      "password": "Temppw777"
+    }
+  }
+}
