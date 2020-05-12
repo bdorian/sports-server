@@ -1,0 +1,127 @@
+
+https://developer.sportradar.com/
+
+ username - FSMadmin 
+ password - Temppw777
+
+
+Next Steps
+
+Register your application with our Portal to obtain trial access keys
+Browse the documentation and sample feeds
+Build something awesome.
+
+Trial keys:
+
+Global American Football Trial v1
+Key: y2enhgypfx7hrukb629dxxzj
+Application
+Fantasy Sports Melees
+Key:
+y2enhgypfx7hrukb629dxxzj
+Status:
+active
+Created:
+3 days ago
+Key Rate Limits
+1	Calls per second
+1,000	Calls per month
+
+Global Baseball Trial v1
+Key: 9zbbw7gm2ekgxdhfempwzpp3
+Application
+Fantasy Sports Melees
+Key:
+9zbbw7gm2ekgxdhfempwzpp3
+Status:
+active
+Created:
+3 days ago
+Key Rate Limits
+1	Calls per second
+1,000	Calls per month
+
+Global Basketball Trial v1
+Key: 87brrvtfxvw6xcp2gw4ma9hg
+Application
+Fantasy Sports Melees
+Key:
+87brrvtfxvw6xcp2gw4ma9hg
+Status:
+active
+Created:
+3 days ago
+Key Rate Limits
+1	Calls per second
+1,000	Calls per month
+
+MLB Trial v6
+Key: yeuzcbbeweges47tgzhag5vr
+Application
+Fantasy Sports Melees
+Key:
+yeuzcbbeweges47tgzhag5vr
+Status:
+active
+Created:
+3 days ago
+Key Rate Limits
+1	Calls per second
+1,000	Calls per month
+
+NBA Trial
+Key: dnwbjczke2v2wfv9zytu8hpf
+Application
+Fantasy Sports Melees
+Key:
+dnwbjczke2v2wfv9zytu8hpf
+Status:
+active
+Created:
+3 days ago
+Key Rate Limits
+1	Calls per second
+1,000	Calls per month
+
+NFL Classic Trial
+Key: zuqpsxq6tvnren46z7mr7brg
+Application
+Fantasy Sports Melees
+Key:
+zuqpsxq6tvnren46z7mr7brg
+Status:
+active
+Created:
+3 days ago
+Key Rate Limits
+1	Calls per second
+1,000	Calls per month
+
+NFL Official Trial
+Key: 3q6urcxhyejfzufa7e4bfxb2
+Application
+Fantasy Sports Melees
+Key:
+3q6urcxhyejfzufa7e4bfxb2
+Status:
+active
+Created:
+3 days ago
+Key Rate Limits
+1	Calls per second
+1,000	Calls per month
+View Report Delete Key
+
+SPORTRADAR
+150 South 5th St. Suite 400
+Minneapolis, MN 55402
+USA
+
+us-sales@sportradar.com
+us-jobs@sportradar.com
+Main: 612-361-4100
+Sales: 612-249-7270
+Terms and Conditions
+SPORTRADAR IS SOCIAL
+ Facebook  Twitter LinkedIn
+Privacy Policy © Sportradar, a subsidiary of Sportradar AG

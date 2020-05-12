@@ -1,0 +1,35 @@
+How the melee should be rendered (similar to the drawing)
+
+         <table class="table table-hover">
+                <thead>
+                <tr>
+                  <th class="text-nowrap" on:click="{sortBy('lastName')}">Player {{{sortArrow 'lastName'}}}</th>
+                  <th class="text-nowrap text-center" on:click="{sortBy('performance')}">Fan Pts {{{sortArrow 'performance'}}}</th>
+                  <th class="text-nowrap text-center" on:click="{sortBy('projection')}">Proj Pts {{{sortArrow 'projection'}}}</th>
+                  <th class="text-nowrap text-center" on:click="{sortBy('mp')}">MP {{{sortArrow 'mp'}}}</th>
+                  <th class="text-nowrap text-center" on:click="{sortBy('totalInvestment')}">Total $ {{{sortArrow 'totalInvestment'}}}</th>
+                  {{^if appState.isAdmin}}
+                    <th class="text-nowrap text-center" on:click="{sortBy('userInvestment')}">Your $ {{{sortArrow 'userInvestment'}}}</th>
+                  {{/if}}
+                  <th class="text-nowrap text-center" on:click="{sortBy('roi')}">ROI {{{sortArrow 'roi'}}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each rows}}
+                  <tr on:click="openPlayer(.)">
+                    <td class="text-nowrap">
+                      <span class="player-name">{{firstName}} {{lastName}}</span> · {{team}} · <span class="player-position">{{playerPosition position}}</span><br />
+                      <small>{{timestampTimeOnly gameStartTime}} {{#if isPlayingHome}}@{{else}}vs{{/if}} {{vsTeam}}</small>
+                    </td>
+                    <td class="text-nowrap text-center">{{performance}}</td>
+                    <td class="text-nowrap text-center">{{projection}}</td>
+                    <td class="text-nowrap text-center">{{mp}}</td>
+                    <td class="text-nowrap text-center">{{#if totalInvestment}}{{numberFormatTotalInvestment totalInvestment}}{{/if}}</td>
+                    {{^if appState.isAdmin}}
+                      <td class="text-nowrap text-center">{{#if userInvestment}}{{numberFormat userInvestment}}{{/if}}</td>
+                    {{/if}}
+                    <td class="text-nowrap text-center">{{roi}}</td>
+                  </tr>
+                {{/each}}
+                </tbody>
+              </table>
